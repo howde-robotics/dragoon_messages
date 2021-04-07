@@ -12,16 +12,24 @@ find_package(catkin REQUIRED COMPONENTS
   rostest
   rosunit
   actionlib_msgs
+  geometry_msgs
 )
 
 add_message_files(
   FILES
   watchHeartbeat.msg
   watchStatus.msg
+  telemetryData.msg
+  ObjectInfo.msg
+  Objects.msg
+)
+add_service_files(
+  FILES
+  restartCamera.srv
 )
 
 generate_messages(
-  DEPENDENCIES actionlib_msgs std_msgs
+  DEPENDENCIES actionlib_msgs std_msgs geometry_msgs
 )
 
 catkin_package(CATKIN_DEPENDS
@@ -31,5 +39,6 @@ catkin_package(CATKIN_DEPENDS
   sensor_msgs
   nav_msgs
   tf
+  geometry_msgs
   actionlib_msgs
 )
