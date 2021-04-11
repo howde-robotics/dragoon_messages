@@ -22,6 +22,7 @@ add_message_files(
   telemetryData.msg
   ObjectInfo.msg
   Objects.msg
+  driveCmd.msg
 )
 add_service_files(
   FILES
