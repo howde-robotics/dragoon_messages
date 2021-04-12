@@ -19,14 +19,9 @@ add_message_files(
   FILES
   watchHeartbeat.msg
   watchStatus.msg
-  telemetryData.msg
   ObjectInfo.msg
   Objects.msg
   driveCmd.msg
-)
-add_service_files(
-  FILES
-  restartCamera.srv
 )
 
 generate_messages(
