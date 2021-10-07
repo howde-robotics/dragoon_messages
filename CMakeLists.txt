@@ -22,6 +22,7 @@ add_message_files(
   ObjectInfo.msg
   Objects.msg
   driveCmd.msg
+  stateCmd.msg
 )
 
 generate_messages(
